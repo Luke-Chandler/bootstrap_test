@@ -108,8 +108,28 @@
 <a href="#" class="list-group-item disabled list-group-item-action">Second item</a>
 <a href="#" class="list-group-item list-group-item-action">Third item</a>
     </div>
-    <div class="card">
-<div class="card-body">Basic card</div>
+    <div class="card" style="width:400px">
+<div class="card bg-danger text-white">
+    <img class="card-img-top" src="Images/X bomb.jpg" alt="Card image" style="width:100%">
+    <div class="card-header">Header</div>
+    <div class="card-body"><a href="#" class="btn btn-warning">Card Link</a></div>
+    <div class="card-footer">Footer</div>
+</div>
     </div>
+    <div class="container">
+    <button type="button" class="btn btn-success" id="myBtn">Show Toast</button>
+    <div class="toast">
+        <div class="toast-header">Toast-header</div>
+        <div class="toast-body">Green means go</div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function(){
+        $("#myBtn").click(function(){
+            $('.toast').toast('show');
+        });
+    });
+</script>
      </body>
 </html>
